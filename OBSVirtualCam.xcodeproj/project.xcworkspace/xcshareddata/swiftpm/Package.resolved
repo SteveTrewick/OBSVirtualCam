@@ -1,0 +1,42 @@
+{
+  "originHash" : "9712144f54a78f80d824c31fa58cdff942a88c5336215a48bd4017abee45211f",
+  "pins" : [
+    {
+      "identity" : "aacstreamtools",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SteveTrewick/AACStreamTools",
+      "state" : {
+        "revision" : "0c1580f081a56f793edeb6938fa7fabada2777ec",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "gcdsocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SteveTrewick/GCDSocket",
+      "state" : {
+        "revision" : "75fa59589bad772e99ef7a19bbad6adc97e47fdd",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "usbmuxd",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SteveTrewick/USBmuxd",
+      "state" : {
+        "revision" : "f5a3d23b09650e762ffa72231563137f1bcb0160",
+        "version" : "2.0.0"
+      }
+    },
+    {
+      "identity" : "videotools",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SteveTrewick/VideoTools",
+      "state" : {
+        "revision" : "028c16088adbde0acc98901508c55a452c75d7c8",
+        "version" : "1.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
