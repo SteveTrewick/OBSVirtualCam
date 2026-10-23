@@ -6,7 +6,7 @@ An experimental macOS SwiftUI app that receives video from the **OBS Camera** iP
 
 - macOS 15.7 or later, as set by the Xcode project, and Xcode to build the app.
 - An iPhone connected by USB, trusted by the Mac, with the OBS Camera iOS app running and streaming.
-- [OBSCamPlugin](https://github.com/SteveTrewick/OBSCamPlugin) checked out at `../Packages/OBSCamPlugin` relative to this project. The Xcode project uses a **local** package reference, not a remote GitHub dependency.
+- [OBSCamPlugin](https://github.com/SteveTrewick/OBSCamPlugin), fetched by Xcode from GitHub at the exact `1.0.0` release tag.
 - OBS Studio installed with its macOS virtual-camera extension. **One-time setup:** open OBS, start its Virtual Camera, approve/enable the camera extension in System Settings if prompted, then stop the virtual camera and quit OBS. On later runs, OBS itself can remain closed.
 
 Open `OBSVirtualCam.xcodeproj`, build and run the app, then click **Connect Phone**. The app selects the first USB-connected device it finds. Once the phone stream connects, it starts feeding the installed OBS Virtual Camera automatically; choose **OBS Virtual Camera** in Zoom or another camera client. **Retry Output** retries the virtual-camera connection if the extension was not available at first. The controls use a separate USB connection to the phone's control server, so they may appear a little after the picture.
@@ -22,7 +22,7 @@ Open `OBSVirtualCam.xcodeproj`, build and run the app, then click **Connect Phon
 - **Fixed output format.** Frames are converted to 1280×720 with 30 fps sample timing, regardless of the phone's selected capture resolution or frame rate. The app does not pace or resample incoming frames, so actual delivery cadence follows the phone stream. Aspect-fill scaling may crop the image.
 - **USB-first and single-device.** It chooses the first USB device returned by discovery. There is no device picker, Wi-Fi transport, or automatic recovery from a dropped connection; disconnect and reconnect manually if needed.
 - **Experimental control protocol.** The control panel depends on the OBS Camera app's current control-server messages and available settings. Controls can connect slowly or fail independently of video; not every control is supported by every phone/camera mode.
-- **Local development setup.** The Xcode project references `OBSCamPlugin` by relative path and has app-specific bundle/signing settings. Adjust those settings for your machine. This is not a distributable, self-contained build.
+- **Local development setup.** The Xcode project fetches `OBSCamPlugin` from GitHub but has app-specific bundle/signing settings. Adjust those settings for your machine. This is not a distributable, self-contained build.
 
 This project is not affiliated with OBS Studio or the OBS Camera iOS app.
 

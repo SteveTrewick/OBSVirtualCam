@@ -1,5 +1,5 @@
 {
-  "originHash" : "9712144f54a78f80d824c31fa58cdff942a88c5336215a48bd4017abee45211f",
+  "originHash" : "629513d4eb46e994d671a0acdbeb949ed352cbe2e862cafc87355e3da77a77b1",
   "pins" : [
     {
       "identity" : "aacstreamtools",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "75fa59589bad772e99ef7a19bbad6adc97e47fdd",
         "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "obscamplugin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SteveTrewick/OBSCamPlugin.git",
+      "state" : {
+        "revision" : "46cebb0b4b4f3cca71697a04e924f4dab5e18880",
+        "version" : "1.0.0"
       }
     },
     {

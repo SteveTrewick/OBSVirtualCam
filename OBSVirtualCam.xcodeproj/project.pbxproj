@@ -101,7 +101,7 @@
 			mainGroup = AA4B9B81308A86220052FA14;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				AA4B9B98308A87600052FA14 /* XCLocalSwiftPackageReference "../Packages/OBSCamPlugin" */,
+				AA4B9B98308A87600052FA14 /* XCRemoteSwiftPackageReference "OBSCamPlugin" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AA4B9B8B308A86220052FA14 /* Products */;
@@ -341,16 +341,21 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		AA4B9B98308A87600052FA14 /* XCLocalSwiftPackageReference "../Packages/OBSCamPlugin" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Packages/OBSCamPlugin;
+/* Begin XCRemoteSwiftPackageReference section */
+		AA4B9B98308A87600052FA14 /* XCRemoteSwiftPackageReference "OBSCamPlugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SteveTrewick/OBSCamPlugin.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		AA4B9B99308A87600052FA14 /* OBSCamPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = AA4B9B98308A87600052FA14 /* XCRemoteSwiftPackageReference "OBSCamPlugin" */;
 			productName = OBSCamPlugin;
 		};
 /* End XCSwiftPackageProductDependency section */
